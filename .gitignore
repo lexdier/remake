@@ -1,5 +1,4 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-.git/refs/heads/branch_name
 # dependencies
 /node_modules
 /.pnp
