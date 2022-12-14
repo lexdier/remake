@@ -1,6 +1,7 @@
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import TheNavbar from '../components/TheNavbar'
+import TheCard from '../components/TheCard'
 
 export default function Home() {
   const router = useRouter()

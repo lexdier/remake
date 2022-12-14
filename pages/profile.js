@@ -1,8 +1,13 @@
+import Link from 'next/link'
+import Button from 'react-bootstrap/Button'
+
 export default function profile() {
 
   return (
-    <div>
-      Sign in with GitHub
-    </div>
+    <>
+      <Link href="/">
+        <Button variant="outline-success">Home</Button>
+      </Link>
+    </>
   )
 }
