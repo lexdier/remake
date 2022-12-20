@@ -3,8 +3,7 @@ import { SessionProvider } from 'next-auth/react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import Head from 'next/head'
-import TheFooter from '../components/TheFooter'
-import TheNavbar from '../components/TheNavbar'
+import TheSidebar from '../components/TheSidebar'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -14,9 +13,8 @@ export default function MyApp({ Component, pageProps }) {
           Remake
         </title>
       </Head>
-      <TheNavbar />
+      <TheSidebar />
       <Component {...pageProps} />
-      <TheFooter />
     </SessionProvider>
 
   )
