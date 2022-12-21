@@ -4,8 +4,8 @@ export default function TheComments() {
   const comments = [1, 2, 3, 4, 5]
   return (
     <>
-      {comments.map(() =>
-        <Card body className="mb-2">
+      {comments.map((comment) =>
+        <Card body className="mb-2" key={comment}>
         <span>
         This is some text within a card body.
         </span>
