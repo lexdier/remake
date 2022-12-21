@@ -3,14 +3,14 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
-import { Card,  Placeholder, } from 'react-bootstrap'
-import TheBody from '../components/TheBody'
+import { Card, Placeholder } from 'react-bootstrap'
+import TheCard from '../components/TheCard'
 
 export default function Home() {
   const router = useRouter()
   const { data: session, status } = useSession()
   const [users, setUsers] = useState([]) //terminar
-
+  const posts = [1, 2, 3, 4, 5]
   useEffect(() => {
     axios.get('/api/users')
       // .then(console.log)
@@ -18,7 +18,7 @@ export default function Home() {
   }, [])
   if (status === 'loading') {
     return (
-      <Card style={{ height: '100%' }}>
+      <Card className="vh-100">
         <Card.Body>
           <Placeholder as={Card.Title} animation="glow">
             <Placeholder xs={6} />
@@ -34,7 +34,13 @@ export default function Home() {
   }
   return (
     <>
-      <TheBody />
+      <div className="w-75 d-flex flex-column align-items-center">
+        {posts.map((post) =>
+          <TheCard key={post} />
+        )
+        }
+      </div>
+
       {// session ? (<div>
         // <h1>{session.user.name}</h1>
         // <h1>{session.user.email}</h1>
