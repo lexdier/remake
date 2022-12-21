@@ -5,20 +5,22 @@ export default function TheComments() {
   return (
     <>
       {comments.map((comment) =>
-        <Card body className="mb-2" key={comment}>
+        <div key={comment}>
+          <Card body className="mb-2">
         <span>
         This is some text within a card body.
         </span>
-          <Row>
-            <Col lg="auto">
-              <div>
-                <i class="fa-light fa-heart me-4" />
-                <i class="fa-light fa-message-smile me-4" />
-                <i class="fa-light fa-share-all"></i>
-              </div>
-            </Col>
-          </Row>
-        </Card>
+            <Row>
+              <Col lg="auto">
+                <div>
+                  <i class="fa-light fa-heart me-4" />
+                  <i class="fa-light fa-message-smile me-4" />
+                  <i class="fa-light fa-share-all"></i>
+                </div>
+              </Col>
+            </Row>
+          </Card>
+        </div>
       )}
     </>
   )
