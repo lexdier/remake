@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import Head from 'next/head'
 import TheSidebar from '../components/TheSidebar'
+import { Col, Container, Row } from 'react-bootstrap'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -13,8 +14,14 @@ export default function MyApp({ Component, pageProps }) {
           Remake
         </title>
       </Head>
-      <TheSidebar />
-      <Component {...pageProps} />
+      <Row className="m-0">
+        <Col lg={4}>
+          <TheSidebar />
+        </Col>
+        <Col lg={8}>
+          <Component {...pageProps} />
+        </Col>
+      </Row>
     </SessionProvider>
 
   )

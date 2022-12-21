@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
-import { Card, Placeholder } from 'react-bootstrap'
+import { Card, Col, Placeholder } from 'react-bootstrap'
 import TheCard from '../components/TheCard'
 
 export default function Home() {
@@ -34,9 +34,11 @@ export default function Home() {
   }
   return (
     <>
-      <div className="w-75 d-flex flex-column align-items-center">
+      <div>
         {posts.map((post) =>
-          <TheCard key={post} />
+          <Col>
+            <TheCard key={post} />
+          </Col>
         )
         }
       </div>

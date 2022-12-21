@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function TheSidebar() {
   return (
-    <div className="sidebarFixed w-25">
+    <div className="sidebarFixed">
       <ListGroup>
         <Button className="m-2" variant="dark">
           <Link href="/" className="text-decoration-none d-flex">
