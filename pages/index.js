@@ -36,8 +36,8 @@ export default function Home() {
     <>
       <div>
         {posts.map((post) =>
-          <Col>
-            <TheCard key={post} />
+          <Col key={post}>
+            <TheCard />
           </Col>
         )
         }
