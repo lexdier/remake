@@ -17,7 +17,7 @@ export default function TheCard() {
           <TheComments />
         </Offcanvas.Body>
       </Offcanvas>
-      <Container>
+      <Container className="d-flex justify-content-center align-items-center">
         <Card className="m-4 w-50">
           <Card.Header>Featured</Card.Header>
           <Card.Body>
