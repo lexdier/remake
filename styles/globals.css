@@ -40,3 +40,9 @@ a {
   width: 20em;
   background-color: #3c3a3a;
 }
+.LinkColor{
+  color: #fafafa;
+}
+.LinkColor:hover{
+  color: darkgray;
+}

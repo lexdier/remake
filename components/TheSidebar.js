@@ -7,7 +7,7 @@ export default function TheSidebar() {
     <div className="sidebarFixed">
       <ListGroup>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-house-chimney me-2" />
             </div>
@@ -15,7 +15,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-magnifying-glass me-2" />
             </div>
@@ -23,7 +23,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-magnifying-glass me-2" />
             </div>
@@ -31,7 +31,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-bell me-2" />
             </div>
@@ -39,7 +39,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/profile" className="text-decoration-none d-flex">
+          <Link href="/profile" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-user me-2" />
             </div>
@@ -47,7 +47,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-grip-dots-vertical me-2" />
             </div>
@@ -55,7 +55,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
@@ -63,7 +63,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
@@ -71,7 +71,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
@@ -79,7 +79,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/login" className="text-decoration-none d-flex">
+          <Link href="/login" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
@@ -87,7 +87,7 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/logout" className="text-decoration-none d-flex">
+          <Link href="/logout" className="text-decoration-none d-flex LinkColor">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
