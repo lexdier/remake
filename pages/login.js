@@ -1,14 +1,13 @@
 import { useRouter } from 'next/router'
-import { useSession } from 'next-auth/react'
+import { useAuth0 } from '@auth0/auth0-react'
 
 export default function LoginPage() {
-  const { status } = useSession()
   const router = useRouter()
-
+  const { loginWithRedirect } = useAuth0();
   return (
     <div>
-      <button onClick={() => router.push('/api/auth/signin/github')}>
-        Sign in with GitHub
+      <button onClick={() => loginWithRedirect()}>
+        Sign in
       </button>
     </div>
   )

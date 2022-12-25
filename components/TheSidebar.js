@@ -79,19 +79,19 @@ export default function TheSidebar() {
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/login" className="text-decoration-none d-flex">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
-            <span>About Us</span>
+            <span>Login</span>
           </Link>
         </Button>
         <Button className="m-2" variant="dark">
-          <Link href="/" className="text-decoration-none d-flex">
+          <Link href="/logout" className="text-decoration-none d-flex">
             <div>
               <i className="fa-light fa-address-card me-2" />
             </div>
-            <span>About Us</span>
+            <span>Logout</span>
           </Link>
         </Button>
       </ListGroup>
