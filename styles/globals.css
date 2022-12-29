@@ -36,8 +36,9 @@ a {
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   background-color: #3c3a3a;
+  justify-content: space-around;
 }
 .LinkColor{
   color: #fafafa;

@@ -3,13 +3,13 @@ import Button from 'react-bootstrap/Button'
 
 export default function TheProfileInfo() {
   return (
-    <ListGroup>
-      <ListGroup.Item className="d-flex">
+    <ListGroup className="border-0">
+      <ListGroup.Item className="border-0">
         <Row className="w-100">
           <Col lg={7}>
-            <span>
-              user.name
-             </span>
+            <h3>
+              lexdier_savio
+            </h3>
           </Col>
           <Col lg={5}>
             <div className="d-flex justify-content-around">
@@ -20,7 +20,7 @@ export default function TheProfileInfo() {
           </Col>
         </Row>
       </ListGroup.Item>
-      <ListGroup.Item>
+      <ListGroup.Item className="border-0">
         <div className="d-flex justify-content-between">
           <span>
            Posts 23
@@ -33,9 +33,9 @@ export default function TheProfileInfo() {
           </span>
         </div>
       </ListGroup.Item>
-      <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-      <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      <ListGroup.Item className="border-0">Morbi leo risus</ListGroup.Item>
+      <ListGroup.Item className="border-0">Porta ac consectetur ac</ListGroup.Item>
+      <ListGroup.Item className="border-0">Vestibulum at eros</ListGroup.Item>
     </ListGroup>
 
 

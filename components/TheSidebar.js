@@ -1,98 +1,85 @@
 import ListGroup from 'react-bootstrap/ListGroup'
-import Button from 'react-bootstrap/Button'
 import Link from 'next/link'
+import { Image, ListGroupItem } from 'react-bootstrap'
 
 export default function TheSidebar() {
   return (
-    <ListGroup className="sidebarFixed">
-      <Button className="m-2" variant="dark">
+    <ListGroup className="sidebarFixed p-2">
+      <div className="p-2 d-flex justify-content-center align-items-center">
+        <Image rounded src="https://picsum.photos/200/75"/>
+      </div>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-house-chimney me-2" />
           </div>
           <span>Home</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-magnifying-glass me-2" />
           </div>
           <span>Search</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-magnifying-glass me-2" />
           </div>
           <span>Message</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-bell me-2" />
           </div>
           <span>Notifications</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/profile" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-user me-2" />
           </div>
           <span>Profile</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-grip-dots-vertical me-2" />
           </div>
           <span>More</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />
           </div>
           <span>About Us</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
-        <Link href="/" className="text-decoration-none d-flex LinkColor">
-          <div>
-            <i className="fa-light fa-address-card me-2" />
-          </div>
-          <span>About Us</span>
-        </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
-        <Link href="/" className="text-decoration-none d-flex LinkColor">
-          <div>
-            <i className="fa-light fa-address-card me-2" />
-          </div>
-          <span>About Us</span>
-        </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/login" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />
           </div>
           <span>Login</span>
         </Link>
-      </Button>
-      <Button className="m-2" variant="dark">
+      </ListGroupItem>
+      <ListGroupItem className="p-2  bg-dark rounded-2">
         <Link href="/logout" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />
           </div>
           <span>Logout</span>
         </Link>
-      </Button>
+      </ListGroupItem>
     </ListGroup>
   )
 }

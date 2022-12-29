@@ -2,7 +2,6 @@ import { Card, Col, Container, Offcanvas, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
 import { useState } from 'react'
 import TheComments from './TheComments'
-import LeaveComments from './LeaveComments'
 
 export default function TheCard() {
   const [show, setShow] = useState(false)

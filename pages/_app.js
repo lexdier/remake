@@ -3,10 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Head from 'next/head'
 import TheSidebar from '../components/TheSidebar'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Auth0Provider } from '@auth0/auth0-react'
+import { Auth0Provider, useAuth0 } from '@auth0/auth0-react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function MyApp({ Component, pageProps }) {
-
+//  const { user, isAuthenticated, isLoading } = useAuth0()
+//  const router = useRouter()
+//  useEffect(() => {
+//    if (!isAuthenticated) {
+//     router.push('./login')
+//    } else {
+//      router.push('./')
+//    }
+//  })
   return (
     <Auth0Provider
       domain="remake.us.auth0.com"
@@ -28,6 +38,5 @@ export default function MyApp({ Component, pageProps }) {
         </Col>
       </Row>
     </Auth0Provider>
-
   )
 }
