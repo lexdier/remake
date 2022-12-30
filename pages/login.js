@@ -5,7 +5,7 @@ export default function LoginPage() {
   const router = useRouter()
   const { loginWithRedirect } = useAuth0();
   return (
-    <div>
+    <div className="vh-100 bg-info  d-flex justify-content-center align-items-center">
       <button onClick={() => loginWithRedirect()}>
         Sign in
       </button>

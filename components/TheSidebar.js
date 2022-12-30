@@ -8,7 +8,7 @@ export default function TheSidebar() {
       <div className="p-2 d-flex justify-content-center align-items-center">
         <Image rounded src="https://picsum.photos/200/75"/>
       </div>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-house-chimney me-2" />
@@ -16,7 +16,7 @@ export default function TheSidebar() {
           <span>Home</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-magnifying-glass me-2" />
@@ -24,7 +24,7 @@ export default function TheSidebar() {
           <span>Search</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-magnifying-glass me-2" />
@@ -32,7 +32,7 @@ export default function TheSidebar() {
           <span>Message</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-bell me-2" />
@@ -40,7 +40,7 @@ export default function TheSidebar() {
           <span>Notifications</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/profile" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-user me-2" />
@@ -48,7 +48,7 @@ export default function TheSidebar() {
           <span>Profile</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-grip-dots-vertical me-2" />
@@ -56,7 +56,7 @@ export default function TheSidebar() {
           <span>More</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />
@@ -64,7 +64,7 @@ export default function TheSidebar() {
           <span>About Us</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/login" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />
@@ -72,7 +72,7 @@ export default function TheSidebar() {
           <span>Login</span>
         </Link>
       </ListGroupItem>
-      <ListGroupItem className="p-2  bg-dark rounded-2">
+      <ListGroupItem className="p-2   rounded-2">
         <Link href="/logout" className="text-decoration-none d-flex LinkColor">
           <div>
             <i className="fa-light fa-address-card me-2" />

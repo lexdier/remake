@@ -12,11 +12,8 @@ export default function profile() {
 //  console.log(user.email)
 
   return (
-    <Card>
-      <Link href="/">
-        <Button variant="outline-success">Home</Button>
-      </Link>
-      <Card.Header>
+    <Card className="rounded-0 border-0">
+      <Card.Body>
         <Row>
           <Col lg={6}>
             <div className="d-flex justify-content-center align-items-center">
@@ -27,15 +24,19 @@ export default function profile() {
             <TheProfileInfo />
           </Col>
         </Row>
-      </Card.Header>
-      <Card.Body>
-        <TheHistoryList />
+        <Row>
+          <Col>
+            <TheHistoryList />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <ThePosts />
+            <ThePosts />
+            <ThePosts />
+          </Col>
+        </Row>
       </Card.Body>
-      <Card.Footer>
-        <ThePosts />
-        <ThePosts />
-        <ThePosts />
-      </Card.Footer>
     </Card>
   )
 }

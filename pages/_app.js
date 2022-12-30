@@ -27,12 +27,12 @@ export default function MyApp({ Component, pageProps }) {
           Remake
         </title>
       </Head>
-      <Row className="m-0 vh-100">
-        <Col lg={2}>
+      <Row className="m-0 vh-100 p-4">
+        <Col lg={2} className="p-0">
           <TheSidebar />
         </Col>
-        <Col lg={10}>
-          <Container className="p-4">
+        <Col lg={10} className="p-0">
+          <Container className="p-0">
             <Component {...pageProps} />
           </Container>
         </Col>

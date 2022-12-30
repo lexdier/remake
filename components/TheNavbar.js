@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 export default function TheNavbar() {
   return (
-    <Carousel>
+    <Carousel variant="dark">
       <Carousel.Item>
         <img
           className="d-block"

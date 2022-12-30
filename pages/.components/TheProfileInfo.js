@@ -1,5 +1,6 @@
 import { Col, ListGroup, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
+import Link from 'next/link'
 
 export default function TheProfileInfo() {
   return (
@@ -13,9 +14,11 @@ export default function TheProfileInfo() {
           </Col>
           <Col lg={5}>
             <div className="d-flex justify-content-around">
-              <Button variant="light" className="border-dark">Edit</Button>
-              <Button variant="light" className="border-dark">Config</Button>
-
+              <Button variant="outline-dark"  className="m-1">Edit</Button>
+              <Button variant="outline-dark"  className="m-1">Config</Button>
+              <Link href="/" className="m-1">
+                <Button variant="outline-dark">Home</Button>
+              </Link>
             </div>
           </Col>
         </Row>
