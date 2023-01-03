@@ -55,4 +55,5 @@ a {
 
 .HistoryList {
   overflow: hidden;
+  overflow-x: scroll;
 }

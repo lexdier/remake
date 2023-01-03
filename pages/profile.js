@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import Button from 'react-bootstrap/Button'
 import { Card, Col, Row } from 'react-bootstrap'
 import TheProfileInfo from '../pages/.components/TheProfileInfo'
 import { Image } from 'react-bootstrap'
@@ -24,7 +22,7 @@ export default function profile() {
             <TheProfileInfo />
           </Col>
         </Row>
-        <Row>
+        <Row className="my-5">
           <Col>
             <TheHistoryList />
           </Col>
