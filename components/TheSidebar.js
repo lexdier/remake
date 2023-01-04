@@ -6,11 +6,13 @@ import { useEffect, useState } from 'react'
 
 export default function TheSidebar() {
 
-  const [show, setShow] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <>
-      <CreatePost show={show} />
+      <CreatePost
+        show={showModal}
+        onclose={() => setShowModal(false)} />
       <ListGroup className="sidebarFixed p-2">
         <div className="p-2 d-flex justify-content-center align-items-center">
           <Image rounded src="https://picsum.photos/200/75" />
@@ -56,7 +58,7 @@ export default function TheSidebar() {
           </Link>
         </ListGroupItem>
         <ListGroupItem className="p-2 rounded-2 border-0">
-          <div onClick={() => setShow(true)} className="d-flex LinkColor">
+          <div onClick={() => setShowModal(true)} className="d-flex LinkColor">
             <div>
               <i className="fa-light fa-plus me-2" />
             </div>

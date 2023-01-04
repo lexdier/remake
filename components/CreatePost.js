@@ -2,21 +2,27 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import { useEffect, useState } from 'react'
 
-export default function CreatePost({ show }) {
+export default function CreatePost({ show, onclose = () => ({}) }) {
 
-  const [seeModal, setSeeModal] = useState(false)
+  const [visible, setVisible] = useState(show)
 
   useEffect(() => {
-    setSeeModal(show)
-  }, [show])
+      setVisible(show)
+    }, [show]
+  )
+
+  function handleClose() {
+    setVisible(false)
+    onclose()
+  }
 
   return (
     <Modal
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      onHide={() => setSeeModal(false)}
-      show={seeModal}
+      onHide={() => handleClose()}
+      show={visible}
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
@@ -32,7 +38,7 @@ export default function CreatePost({ show }) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={() => setSeeModal(false)}>Close</Button>
+        <Button onClick={() => handleClose()}>Close</Button>
       </Modal.Footer>
     </Modal>
   )
