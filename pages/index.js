@@ -34,14 +34,6 @@ export default function Home() {
         )
         }
       </div>
-
-      {// session ? (<div>
-        // <h1>{session.user.name}</h1>
-        // <h1>{session.user.email}</h1>
-        // <img src={session.user.image} alt="" />
-        //</div>) : (
-        // <p>Esquyeletom</p>)
-      }
     </>
   )
 }

@@ -13,9 +13,9 @@ export default function TheComments() {
             <Row>
               <Col lg="auto">
                 <div>
-                  <i class="fa-light fa-heart me-4" />
-                  <i class="fa-light fa-message-smile me-4" />
-                  <i class="fa-light fa-share-all"></i>
+                  <i className="fa-light fa-heart me-4" />
+                  <i className="fa-light fa-message-smile me-4" />
+                  <i className="fa-light fa-share-all"></i>
                 </div>
               </Col>
             </Row>

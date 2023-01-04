@@ -1,17 +1,17 @@
-import { Card, Col, Container, Offcanvas, Row } from 'react-bootstrap'
+import { Card, Col, Offcanvas, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
 import { useState } from 'react'
 import TheComments from './TheComments'
 
 export default function TheCard() {
-  const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(!show)
+  const [commentShow, setCommentShow] = useState(false)
+  const commentModalClose = () => setCommentShow(false)
+  const commentModalShow = () => setCommentShow(!commentShow)
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Offcanvas show={show} onHide={handleClose} scroll="scroll" placement="end">
+      <Offcanvas show={commentShow} onHide={commentModalClose} scroll="scroll" placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Comments</Offcanvas.Title>
         </Offcanvas.Header>
@@ -29,21 +29,21 @@ export default function TheCard() {
           <Row>
             <Col lg="auto">
               <div>
-                <i onClick={() => setCount(count + 1)} class="fa-light fa-heart me-4" />
-                <i class="fa-light fa-message-smile me-4" />
-                <i class="fa-light fa-share-all"></i>
+                <i onClick={() => setCount(count + 1)} className="fa-light fa-heart me-4" />
+                <i className="fa-light fa-message-smile me-4" />
+                <i className="fa-light fa-share-all"></i>
               </div>
             </Col>
             <Col />
             <Col lg="auto">
               <div>
-                <i class="fa-light fa-bookmark" />
+                <i className="fa-light fa-bookmark" />
               </div>
             </Col>
           </Row>
           <Row>
             <Col>
-              <i class="fa-light fa-person me-2" />
+              <i className="fa-light fa-person me-2" />
               <span>Le gusta a {count} personas</span>
             </Col>
           </Row>
@@ -54,7 +54,7 @@ export default function TheCard() {
           </Row>
           <Row>
             <Col>
-              <Button variant="light" className="p-0" onClick={handleShow}>See Comments</Button>
+              <Button variant="light" className="p-0" onClick={commentModalShow}>See Comments</Button>
             </Col>
           </Row>
         </Card.Footer>
