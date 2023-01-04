@@ -51,6 +51,8 @@ a {
 
 .LinkColor:hover {
   color: darkgray;
+  cursor: pointer;
+  user-select: none;
 }
 
 .HistoryList {

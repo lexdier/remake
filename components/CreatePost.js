@@ -3,15 +3,19 @@ import Modal from 'react-bootstrap/Modal'
 import { useEffect, useState } from 'react'
 
 export default function CreatePost({ show }) {
+
   const [seeModal, setSeeModal] = useState(false)
+
   useEffect(() => {
     setSeeModal(show)
   }, [show])
+
   return (
     <Modal
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      onHide={() => setSeeModal(false)}
       show={seeModal}
     >
       <Modal.Header closeButton>

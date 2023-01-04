@@ -2,10 +2,10 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Link from 'next/link'
 import { Image, ListGroupItem } from 'react-bootstrap'
 import CreatePost from './CreatePost'
-import { useState } from 'react'
-import Button from 'react-bootstrap/Button'
+import { useEffect, useState } from 'react'
 
 export default function TheSidebar() {
+
   const [show, setShow] = useState(false)
 
   return (
@@ -56,13 +56,12 @@ export default function TheSidebar() {
           </Link>
         </ListGroupItem>
         <ListGroupItem className="p-2 rounded-2 border-0">
-          <Button onClick={() => setShow(true)} className="d-flex">
+          <div onClick={() => setShow(true)} className="d-flex LinkColor">
             <div>
               <i className="fa-light fa-plus me-2" />
             </div>
             <span>Add</span>
-          </Button>
-
+          </div>
         </ListGroupItem>
         <ListGroupItem className="p-2 rounded-2 border-0">
           <Link href="/" className="text-decoration-none d-flex LinkColor">
